@@ -18,7 +18,7 @@ const mongoDB = async () => {
         })
         try{
           global.FoodList = data;
-          console.log(global.FoodList)
+          // console.log(global.FoodList)
         }
         catch{
             console.log(err);
