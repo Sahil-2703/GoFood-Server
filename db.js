@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const mongoURI = "mongodb://0.0.0.0:27017/GoFood";
+const mongoURI = "mongodb+srv://rsinghsahil91:KcCjfg6xEeBvqKTO@cluster0.s81ch.mongodb.net/GoFood?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose.set("strictQuery", true);
 
@@ -18,7 +18,7 @@ const mongoDB = async () => {
         })
         try{
           global.FoodList = data;
-          // console.log(global.FoodList)
+          console.log(global.FoodList)
         }
         catch{
             console.log(err);
